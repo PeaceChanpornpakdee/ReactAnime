@@ -21,7 +21,6 @@ function CourseImage({ id, title, slug }) {
 }
 
 function CourseDetails({ title, authorName, category, course, slug, onDeleteClick}) {
-    const { title, authorName, category, course, slug, onDeleteClick } = props;
     return (
       <div className="speaker-info">
         <Link to={"/collection/" + slug}>
