@@ -1,92 +1,93 @@
 const courses = [
   {
     id: 1,
-    title: "Securing React Apps with Auth0",
-    slug: "react-auth0-authentication-security",
+    title: "Weathering with You",
+    slug: "weathering-with-you",
     authorId: 1,
-    category: "JavaScript"
+    category: "Anime",
   },
   {
     id: 2,
-    title: "React: The Big Picture",
-    slug: "react-big-picture",
+    title: "The Garden of Words",
+    slug: "the-garden-of-words",
     authorId: 1,
-    category: "JavaScript"
+    category: "Anime",
   },
   {
     id: 3,
-    title: "Creating Reusable React Components",
-    slug: "react-creating-reusable-components",
+    title: "Your Name",
+    slug: "your-name",
     authorId: 1,
-    category: "JavaScript"
+    category: "Anime",
   },
   {
     id: 4,
-    title: "Building a JavaScript Development Environment",
-    slug: "javascript-development-environment",
+    title: "5 Centimeters per Second",
+    slug: "5-centimeters-per-second",
     authorId: 1,
-    category: "JavaScript"
+    category: "Anime",
   },
   {
     id: 5,
-    title: "Building Applications with React and Redux",
-    slug: "react-redux-react-router-es6",
+    title: "Weathering with You",
+    slug: "weathering-with-you-2",
     authorId: 1,
-    category: "JavaScript"
+    category: "Anime",
   },
   {
     id: 6,
-    title: "Building Applications in React and Flux",
-    slug: "react-flux-building-applications",
+    title: "Voices of a Distant Star",
+    slug: "voices-of-a-distant-star",
     authorId: 1,
-    category: "JavaScript"
+    category: "Anime",
   },
   {
     id: 7,
-    title: "Clean Code: Writing Code for Humans",
-    slug: "writing-clean-code-humans",
-    authorId: 1,
-    category: "Software Practices"
+    title: "Spirited Away",
+    slug: "spirited-away",
+    authorId: 2,
+    category: "Anime",
   },
   {
     id: 8,
-    title: "Architecting Applications for the Real World",
-    slug: "architecting-applications-dotnet",
-    authorId: 1,
-    category: "Software Architecture"
+    title: "My Neighbor Totoro",
+    slug: "my-neighbor-totoro",
+    authorId: 2,
+    category: "Anime",
   },
   {
     id: 9,
-    title: "Becoming an Outlier: Reprogramming the Developer Mind",
-    slug: "career-reboot-for-developer-mind",
-    authorId: 1,
-    category: "Career"
+    title: "Princess Mononoke",
+    slug: "princess-mononoke",
+    authorId: 2,
+    category: "Anime",
   },
   {
     id: 10,
-    title: "Web Component Fundamentals",
-    slug: "web-components-shadow-dom",
-    authorId: 1,
-    category: "HTML5"
-  }
+    title: "Howl's Moving Castle",
+    slug: "howl-s-moving-castle",
+    authorId: 2,
+    category: "Anime",
+  },
 ];
 
 const authors = [
-  { id: 1, name: "Cory House" },
-  { id: 2, name: "Scott Allen" },
-  { id: 3, name: "Dan Wahlin" }
+  { id: 1, name: "Makoto Shinkai" },
+  { id: 2, name: "Hayao Miyazaki" },
+  { id: 3, name: "Akira Toriyama" },
+  { id: 4, name: "Eiichiro Oda" },
 ];
 
 const newCourse = {
   id: null,
   title: "",
   authorId: null,
-  category: ""
+  category: "",
 };
 
 // Using CommonJS style export so we can consume via Node (without using Babel-node)
 module.exports = {
   newCourse,
   courses,
-  authors
+  authors,
 };
