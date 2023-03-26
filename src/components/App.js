@@ -16,9 +16,9 @@ function App() {
       <Switch>
         <Route exact path="/" component={HomePage} />
         <Route path="/about" component={AboutPage} />
-        <Route path="/courses" component={CoursesPage} />
-        <Route path="/course/:slug" component={ManageCoursePage} />
-        <Route path="/course" component={ManageCoursePage} />
+        <Route path="/collections" component={CoursesPage} />
+        <Route path="/collection/:slug" component={ManageCoursePage} />
+        <Route path="/collection" component={ManageCoursePage} />
         <Route component={PageNotFound} />
       </Switch>
       <ToastContainer autoClose={3000} hideProgressBar />

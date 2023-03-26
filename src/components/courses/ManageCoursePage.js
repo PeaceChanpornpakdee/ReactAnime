@@ -24,7 +24,7 @@ function ManageCoursePage({
   useEffect(() => {
     if (courses.length === 0) {
       loadCourses().catch(error => {
-        alert("Loading courses failed" + error);
+        alert("Loading collections failed" + error);
       });
     } else {
       setCourse({ ...props.course });
@@ -64,8 +64,8 @@ function ManageCoursePage({
     setSaving(true);
     saveCourse(course)
       .then(() => {
-        toast.success("Course saved.");
-        history.push("/courses");
+        toast.success("Collection saved.");
+        history.push("/collections");
       })
       .catch(error => {
         setSaving(false);

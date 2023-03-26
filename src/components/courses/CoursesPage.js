@@ -19,7 +19,7 @@ class CoursesPage extends React.Component {
 
     if (courses.length === 0) {
       actions.loadCourses().catch(error => {
-        alert("Loading courses failed" + error);
+        alert("Loading collections failed" + error);
       });
     }
 
@@ -42,7 +42,7 @@ class CoursesPage extends React.Component {
   render() {
     return (
       <>
-        {this.state.redirectToAddCoursePage && <Redirect to="/course" />}
+        {this.state.redirectToAddCoursePage && <Redirect to="/collection" />}
         <h2>My Anime Collection</h2>
         {this.props.loading ? (
           <Spinner />
@@ -53,7 +53,7 @@ class CoursesPage extends React.Component {
               className="btn btn-primary add-course"
               onClick={() => this.setState({ redirectToAddCoursePage: true })}
             >
-              Add Anime
+              New Anime
             </button>
 
             <CourseList
