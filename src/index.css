@@ -127,3 +127,20 @@ img {
   font-size: 16px;
   padding-right: 5px;
 }
+
+.profileimage {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50px;
+  float: left;
+  margin-right: 20px;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
