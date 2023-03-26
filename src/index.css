@@ -6,3 +6,124 @@
 nav {
   padding: 20px 0 20px 0;
 }
+
+img {
+  max-width: 100%;
+}
+
+.box .speaker-img span {
+  height: 200px;
+  overflow: hidden;
+  display: flex;
+}
+
+.box .speaker-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cover-fit {
+  height: 210px;
+  object-fit: cover;
+  border-radius: 2.5%;
+}
+
+.speaker-info h3 {
+  font-size: 22px;
+  font-weight: 600;
+  color: #212121;
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
+.speaker-info p {
+  font-size: 15px;
+  font-weight: 400;
+  color: #7a7a7a;
+  line-height: 22px;
+  padding: 0;
+  /* min-height: 70px;
+      max-height: 70px; */
+  margin: 0;
+  /* overflow: hidden; */
+}
+
+.card-description {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden !important;
+}
+
+.social {
+  display: flex;
+}
+
+/* .social{display: flex;flex-wrap: wrap; padding-top:20px;} */
+.social .company,
+.social .twitter {
+  flex-basis: 1;
+  flex-grow: 1;
+  max-width: 100%;
+  position: relative;
+  padding-left: 45px;
+}
+
+.social .company::before,
+.social .twitter::before {
+  font-family: fontawesome;
+  color: #51b5b1;
+  font-size: 25px;
+  border-radius: 100px;
+  border: 1px solid #51b5b1;
+  width: 40px;
+  height: 40px;
+  display: block;
+  line-height: 40px;
+  text-align: center;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.social .company::before {
+  content: "\f05a";
+}
+
+.social .twitter::before {
+  content: "\f099";
+}
+
+.social h5 {
+  font-size: 14px;
+  font-weight: 600;
+  padding: 0;
+  margin: 0;
+}
+
+.social h6 {
+  font-size: 13px;
+  font-weight: 400;
+  padding: 6px 0 0;
+  margin: 0;
+  color: #7a7a7a;
+}
+
+.btn-load {
+  padding: 15px 30px !important;
+  font-size: 15px;
+  font-weight: bold;
+  border: 0;
+  background-color: #51b5b1;
+}
+
+.btn-load:hover {
+  background: #66ade1;
+}
+
+.btn-load .fa {
+  font-weight: 400;
+  font-size: 16px;
+  padding-right: 5px;
+}
