@@ -31,7 +31,7 @@ class CoursesPage extends React.Component {
   }
 
   handleDeleteCourse = async course => {
-    toast.success("Course deleted");
+    toast.success("Collection deleted");
     try {
       await this.props.actions.deleteCourse(course);
     } catch (error) {
